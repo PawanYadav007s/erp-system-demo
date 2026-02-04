@@ -1,3 +1,4 @@
+```
 # 🏢 Enterprise Resource Planning (ERP) System
 
 <div align="center">
@@ -21,14 +22,64 @@ A comprehensive **Enterprise Resource Planning (ERP)** system built from scratch
 
 ### 🎯 Key Highlights
 
-| Metric | Details |
-|--------|---------|
-| 📊 **Database Models** | 77+ interconnected tables |
-| 🔌 **API Modules** | 26 Flask Blueprints |
-| 🔐 **Permissions** | 50+ granular permissions |
-| 👥 **Multi-User** | LAN-based concurrent access |
-| 📱 **Responsive** | Works on desktop, tablet, mobile |
-| 🖨️ **Reports** | PDF & Excel export support |
+|
+ Metric 
+|
+ Details 
+|
+|
+--------
+|
+---------
+|
+|
+ 📊 
+**
+Database Models
+**
+|
+ 77+ interconnected tables 
+|
+|
+ 🔌 
+**
+API Modules
+**
+|
+ 26 Flask Blueprints 
+|
+|
+ 🔐 
+**
+Permissions
+**
+|
+ 50+ granular permissions 
+|
+|
+ 👥 
+**
+Multi-User
+**
+|
+ LAN-based concurrent access 
+|
+|
+ 📱 
+**
+Responsive
+**
+|
+ Works on desktop, tablet, mobile 
+|
+|
+ 🖨️ 
+**
+Reports
+**
+|
+ PDF & Excel export support 
+|
 
 ---
 
@@ -85,12 +136,8 @@ flowchart TB
     MW --> Blueprints
     Blueprints --> Services
     Services --> PG & CACHE & FS
-
-```
-
-## Request-Response Flow
-
-```mermaid
+Request-Response Flow
+mermaid
 sequenceDiagram
     autonumber
     participant C as 🌐 Client Browser
@@ -114,13 +161,8 @@ sequenceDiagram
         S-->>R: Processed Data
         R-->>C: HTML/JSON Response
     end
-
-```
-
-
-## Manufacturing Workflow
-
-```mermaid
+Manufacturing Workflow
+mermaid
 flowchart TD
     A["📋 Sales Order<br/>Received"] --> B["📁 Create/Link<br/>Project"]
     B --> C["📑 Create or<br/>Select BOM"]
@@ -143,9 +185,6 @@ flowchart TD
     style A fill:#e3f2fd
     style P fill:#c8e6c9
     style N fill:#ffcdd2
-```
-```
-
 ⚡ Key Features
 ✅ Authentication & Security
  Secure password hashing with Werkzeug
@@ -249,8 +288,122 @@ Reports
 Reports
 Report generation with PDF and Excel export options
 
+🛠️ Tech Stack
+Backend
+Technology	Purpose
+Python 3.11+	Core programming language
+Flask 3.1	Web framework
+SQLAlchemy	ORM & database toolkit
+PostgreSQL 15+	Primary database
+Waitress	Production WSGI server
+Flask-Login	User session management
+Flask-WTF	Form handling & CSRF protection
+Frontend
+Technology	Purpose
+Bootstrap 5.3	UI framework
+Jinja2	Template engine
+JavaScript	Client-side interactivity
+Chart.js	Dashboard charts
+DataTables	Advanced table features
+Tools & Utilities
+Technology	Purpose
+ReportLab	PDF generation
+OpenPyXL	Excel export
+python-barcode	Barcode generation
+qrcode	QR code generation
+Pillow	Image processing
+📁 Project Structure
+text
+erp-system/
+├── app/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── user.py
+│   │   ├── sales.py
+│   │   ├── purchase.py
+│   │   ├── inventory.py
+│   │   ├── manufacturing.py
+│   │   ├── hr.py
+│   │   └── finance.py
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   ├── auth.py
+│   │   ├── sales.py
+│   │   ├── purchase.py
+│   │   ├── inventory.py
+│   │   ├── manufacturing.py
+│   │   ├── hr.py
+│   │   ├── finance.py
+│   │   └── reports.py
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── number_series.py
+│   │   ├── pdf_generator.py
+│   │   ├── notification.py
+│   │   └── image_service.py
+│   ├── templates/
+│   │   ├── base.html
+│   │   ├── auth/
+│   │   ├── sales/
+│   │   ├── purchase/
+│   │   ├── inventory/
+│   │   ├── manufacturing/
+│   │   ├── hr/
+│   │   └── reports/
+│   └── static/
+│       ├── css/
+│       ├── js/
+│       └── images/
+├── migrations/
+├── tests/
+├── screenshots/
+├── requirements.txt
+├── run.py
+└── README.md
+🚀 Getting Started
+Prerequisites
+Python 3.11 or higher
+PostgreSQL 15 or higher
+pip (Python package manager)
+Installation
+Clone the repository
 
-# 📝 Important Note
+bash
+git clone https://github.com/yourusername/erp-system.git
+cd erp-system
+Create virtual environment
+
+bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+Install dependencies
+
+bash
+pip install -r requirements.txt
+Configure database
+
+bash
+# Create PostgreSQL database
+createdb erp_database
+
+# Set environment variables
+export DATABASE_URL="postgresql://user:password@localhost/erp_database"
+export SECRET_KEY="your-secret-key"
+Initialize database
+
+bash
+flask db upgrade
+Run the application
+
+bash
+python run.py
+Access the application
+
+Open your browser and navigate to http://localhost:5000
+
+📝 Important Note
 ⚠️ Privacy Notice
 
 This repository contains a sanitized documentation version of the ERP system developed for production use. The actual source code is maintained in a private repository to protect:
@@ -260,13 +413,23 @@ Sensitive configuration details
 Proprietary algorithms
 This portfolio demonstrates the architecture, design patterns, technical capabilities, and development expertise involved in building this comprehensive ERP solution.
 
- 📄 License
+🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+📄 License
 This project documentation is available under the MIT License.
 
+👨‍💻 Author
+Your Name
+
+GitHub: @yourusername
+LinkedIn: Your LinkedIn
+Email: your.email@example.com
 ⭐ If you find this project impressive, please consider giving it a star!
 
 Built with ❤️ using Python, Flask & PostgreSQL
 
 Made with Python
 PRs Welcome
+
 ```
