@@ -90,6 +90,7 @@ flowchart TB
 
 Request-Response Flow
 
+```mermaid
 sequenceDiagram
     autonumber
     participant C as 🌐 Client Browser
