@@ -85,8 +85,12 @@ flowchart TB
     MW --> Blueprints
     Blueprints --> Services
     Services --> PG & CACHE & FS
-Request-Response Flow
-mermaid
+
+```
+
+# Request-Response Flow
+
+``` mermaid
 sequenceDiagram
     autonumber
     participant C as 🌐 Client Browser
@@ -110,8 +114,10 @@ sequenceDiagram
         S-->>R: Processed Data
         R-->>C: HTML/JSON Response
     end
-Manufacturing Workflow
-mermaid
+```
+
+# Manufacturing Workflow
+``` mermaid
 flowchart TD
     A["📋 Sales Order<br/>Received"] --> B["📁 Create/Link<br/>Project"]
     B --> C["📑 Create or<br/>Select BOM"]
@@ -134,10 +140,15 @@ flowchart TD
     style A fill:#e3f2fd
     style P fill:#c8e6c9
     style N fill:#ffcdd2
-text
+```
 
-⚡ Key Features
-✅ Authentication & Security
+
+
+
+# ⚡ Key Features
+
+## ✅ Authentication & Security
+
  Secure password hashing with Werkzeug
  Two-Factor Authentication (OTP based)
  Role-based access control (RBAC)
@@ -146,7 +157,10 @@ text
  Session management with timeout
  CSRF protection on all forms
  Complete audit logging
-✅ Sales Management
+
+ 
+## ✅ Sales Management
+
  Customer master with credit limit tracking
  Quotation with revision system (R1, R2, R3...)
  Convert quotation to sales order
@@ -154,14 +168,18 @@ text
  Invoice generation with PDF export
  Payment tracking (partial/full)
  Debit/Credit note management
-✅ Purchase Management
+ 
+## ✅ Purchase Management
+
  Supplier master with performance rating
  Purchase requisition with multi-level approval
  Supplier quotation comparison
  Purchase order auto-generation
  Goods Receipt Note (GRN) with quality check
  Vendor performance analytics
-✅ Inventory Management
+ 
+## ✅ Inventory Management
+
  Product & material master separation
  Multi-location stock tracking
  Barcode & QR code generation
@@ -169,7 +187,9 @@ text
  Batch & expiry date tracking
  Low stock alerts & notifications
  Stock reservation for orders
-✅ Manufacturing
+ 
+## ✅ Manufacturing
+
  Project management with timeline
  Bill of Materials (BOM) with cost calculation
  Work order management
@@ -177,7 +197,9 @@ text
  Material issue & return tracking
  Consumption variance analysis
  Link projects to quotations & sales orders
-✅ HR Management
+ 
+## ✅ HR Management
+
  Complete employee master
  Daily attendance tracking
  Multiple leave types & approval workflow
@@ -187,7 +209,9 @@ text
  HR document generation (Offer letter, Experience certificate)
  Training program management
  Exit process & clearance
-✅ Electrical Inventory (Specialized Module)
+ 
+## ✅ Electrical Inventory (Specialized Module)
+
  Material master with part codes
  Brand & category management
  Cupboard/Rack location tracking
@@ -195,7 +219,9 @@ text
  Handover to person/project/machine
  Return with condition assessment
  Complete transaction audit log
-✅ Reports & Analytics
+ 
+## ✅ Reports & Analytics
+
  Real-time dashboard with KPIs
  PDF report generation
  Excel export functionality
@@ -241,7 +267,8 @@ Report generation with PDF and Excel export options
 
 
 # 📝 Important Note
-⚠️ Privacy Notice
+
+## ⚠️ Privacy Notice
 
 This repository contains a sanitized documentation version of the ERP system developed for production use. The actual source code is maintained in a private repository to protect:
 
@@ -250,10 +277,10 @@ Sensitive configuration details
 Proprietary algorithms
 This portfolio demonstrates the architecture, design patterns, technical capabilities, and development expertise involved in building this comprehensive ERP solution.
 
- 📄 License
+#  📄 License
 This project documentation is available under the MIT License.
 
-⭐ If you find this project impressive, please consider giving it a star!
+# ⭐ If you find this project impressive, please consider giving it a star!
 
 Built with ❤️ using Python, Flask & PostgreSQL
 
