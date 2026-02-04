@@ -1,4 +1,3 @@
-```
 # 🏢 Enterprise Resource Planning (ERP) System
 
 <div align="center">
@@ -10,7 +9,7 @@
 
 **A production-ready, full-featured ERP system for small & medium businesses**
 
-[Features](#-key-features) • [Architecture](#-system-architecture) • [Modules](#-module-overview) • [Screenshots](#-screenshots) • [Tech Stack](#️-tech-stack)
+[Features](#-key-features) • [Architecture](#-system-architecture) • [Screenshots](#-screenshots) • [Tech Stack](#️-tech-stack)
 
 </div>
 
@@ -251,43 +250,6 @@ flowchart TD
  Custom report builder
  Date-wise filtering
  Module-wise reports
-📸 Screenshots
-Dashboard
-Dashboard
-Main dashboard with KPIs, charts, pending tasks, and quick actions
-
-Login Page
-Login
-Secure login with 2FA support
-
-Quotation Management
-Quotation
-Create and manage quotations with revision tracking
-
-Sales Order
-Sales Order
-Sales order management with item details and status tracking
-
-Purchase Order
-Purchase Order
-Purchase order with supplier details and approval workflow
-
-Inventory Management
-Inventory
-Stock management with barcode support and location tracking
-
-HR - Employee Management
-HR Employee
-Complete employee information management
-
-Salary Slip
-Salary Slip
-Auto-generated salary slip with all components
-
-Reports
-Reports
-Report generation with PDF and Excel export options
-
 🛠️ Tech Stack
 Backend
 Technology	Purpose
@@ -312,6 +274,52 @@ OpenPyXL	Excel export
 python-barcode	Barcode generation
 qrcode	QR code generation
 Pillow	Image processing
+📸 Screenshots
+Dashboard
+Dashboard
+
+Main dashboard with KPIs, charts, pending tasks, and quick actions
+
+Login Page
+Login
+
+Secure login with 2FA support
+
+Quotation Management
+Quotation
+
+Create and manage quotations with revision tracking
+
+Sales Order
+Sales Order
+
+Sales order management with item details and status tracking
+
+Purchase Order
+Purchase Order
+
+Purchase order with supplier details and approval workflow
+
+Inventory Management
+Inventory
+
+Stock management with barcode support and location tracking
+
+HR - Employee Management
+HR Employee
+
+Complete employee information management
+
+Salary Slip
+Salary Slip
+
+Auto-generated salary slip with all components
+
+Reports
+Reports
+
+Report generation with PDF and Excel export options
+
 📁 Project Structure
 text
 erp-system/
