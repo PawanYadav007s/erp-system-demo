@@ -9,7 +9,7 @@
 
 **A production-ready, full-featured ERP system for small & medium businesses**
 
-[Features](#-features) • [Architecture](#-system-architecture) • [Modules](#-modules) • [Screenshots](#-screenshots) • [Tech Stack](#️-tech-stack)
+[Features](#-key-features) • [Architecture](#-system-architecture) • [Modules](#-module-overview) • [Screenshots](#-screenshots) • [Tech Stack](#️-tech-stack)
 
 </div>
 
@@ -17,7 +17,7 @@
 
 ## 📋 Overview
 
-A comprehensive **Enterprise Resource Planning (ERP)** system built from scratch using Python Flask and PostgreSQL. This system manages complete business operations including **Sales, Purchase, Inventory, Manufacturing, HR, and Finance** with Indian GST compliance.
+A comprehensive **Enterprise Resource Planning (ERP)** system built from scratch using Python Flask and PostgreSQL. This system manages complete business operations including **Sales, Purchase, Inventory, Manufacturing, HR, and Finance** modules with multi-user LAN support.
 
 ### 🎯 Key Highlights
 
@@ -27,8 +27,8 @@ A comprehensive **Enterprise Resource Planning (ERP)** system built from scratch
 | 🔌 **API Modules** | 26 Flask Blueprints |
 | 🔐 **Permissions** | 50+ granular permissions |
 | 👥 **Multi-User** | LAN-based concurrent access |
-| 🇮🇳 **GST Compliant** | E-Invoice & E-Way Bill ready |
 | 📱 **Responsive** | Works on desktop, tablet, mobile |
+| 🖨️ **Reports** | PDF & Excel export support |
 
 ---
 
@@ -45,12 +45,12 @@ flowchart TB
     end
 
     subgraph LB["⚖️ Load Balancer"]
-        WS["Waitress WSGI<br/>Server"]
+        WS["Waitress WSGI<br/>Server :5000"]
     end
 
     subgraph App["🚀 Flask Application Layer"]
         direction TB
-        MW["🛡️ Middleware<br/>(CSRF, Auth, Session)"]
+        MW["🛡️ Middleware<br/>CSRF | Auth | Session"]
         
         subgraph Blueprints["📦 26 Blueprint Modules"]
             direction LR
@@ -67,16 +67,16 @@ flowchart TB
         subgraph Services["⚙️ Business Services"]
             direction LR
             NUM["Number<br/>Series"]
-            GST["GST<br/>Calculator"]
             PDF["PDF<br/>Generator"]
             NOTIF["Notification<br/>Service"]
+            IMG["Image<br/>Service"]
         end
     end
 
     subgraph Data["🗄️ Data Layer"]
         direction LR
         PG[("PostgreSQL<br/>Database")]
-        CACHE[("Flask-Cache<br/>Simple Cache")]
+        CACHE[("Flask-Cache")]
         FS[("📁 File<br/>Storage")]
     end
 
@@ -85,6 +85,3 @@ flowchart TB
     MW --> Blueprints
     Blueprints --> Services
     Services --> PG & CACHE & FS
-
-
-
