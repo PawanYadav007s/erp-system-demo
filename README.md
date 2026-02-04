@@ -266,6 +266,46 @@ Reports
 Report generation with PDF and Excel export options
 
 
+
+# 📸 Screenshots
+
+Dashboard
+Dashboard
+Main dashboard with KPIs, charts, pending tasks, and quick actions
+
+Login Page
+Login
+Secure login with 2FA support
+
+Quotation Management
+Quotation
+Create and manage quotations with revision tracking
+
+Sales Order
+Sales Order
+Sales order management with item details and status tracking
+
+Purchase Order
+Purchase Order
+Purchase order with supplier details and approval workflow
+
+Inventory Management
+Inventory
+Stock management with barcode support and location tracking
+
+HR - Employee Management
+HR Employee
+Complete employee information management
+
+Salary Slip
+Salary Slip
+Auto-generated salary slip with all components
+
+Reports
+Reports
+Report generation with PDF and Excel export options
+
+
 # 📝 Important Note
 
 ## ⚠️ Privacy Notice
