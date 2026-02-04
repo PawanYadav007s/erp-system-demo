@@ -144,185 +144,138 @@ flowchart TD
 
 
 
-
 # ⚡ Key Features
 
-## ✅ Authentication & Security
+## 🔐 Authentication & Security
+- Secure password hashing (Werkzeug)
+- Two-Factor Authentication (OTP based)
+- Role-Based Access Control (RBAC)
+- 50+ granular permissions
+- Failed login tracking & auto account lockout
+- Session timeout management
+- CSRF protection on all forms
+- Complete audit logging
 
- Secure password hashing with Werkzeug
- Two-Factor Authentication (OTP based)
- Role-based access control (RBAC)
- 50+ granular permissions
- Failed login tracking & auto account lockout
- Session management with timeout
- CSRF protection on all forms
- Complete audit logging
+---
 
- 
-## ✅ Sales Management
+## 💼 Sales Management
+- Customer master with credit limit tracking
+- Quotation revision system (R1, R2, R3…)
+- Convert quotation → sales order
+- Delivery tracking
+- Invoice generation with PDF export
+- Partial/Full payment tracking
+- Debit/Credit note management
 
- Customer master with credit limit tracking
- Quotation with revision system (R1, R2, R3...)
- Convert quotation to sales order
- Sales order with delivery tracking
- Invoice generation with PDF export
- Payment tracking (partial/full)
- Debit/Credit note management
- 
-## ✅ Purchase Management
+---
 
- Supplier master with performance rating
- Purchase requisition with multi-level approval
- Supplier quotation comparison
- Purchase order auto-generation
- Goods Receipt Note (GRN) with quality check
- Vendor performance analytics
- 
-## ✅ Inventory Management
+## 🛒 Purchase Management
+- Supplier master with performance rating
+- Purchase requisition with multi-level approval
+- Supplier quotation comparison
+- Auto-generated purchase orders
+- Goods Receipt Note (GRN) with quality check
+- Vendor performance analytics
 
- Product & material master separation
- Multi-location stock tracking
- Barcode & QR code generation
- 8 types of stock movements
- Batch & expiry date tracking
- Low stock alerts & notifications
- Stock reservation for orders
- 
-## ✅ Manufacturing
+---
 
- Project management with timeline
- Bill of Materials (BOM) with cost calculation
- Work order management
- Production entry with quality check
- Material issue & return tracking
- Consumption variance analysis
- Link projects to quotations & sales orders
- 
-## ✅ HR Management
+## 📦 Inventory Management
+- Separate product & material masters
+- Multi-location stock tracking
+- Barcode & QR code generation
+- 8 types of stock movements
+- Batch & expiry tracking
+- Low stock alerts & notifications
+- Stock reservation for orders
 
- Complete employee master
- Daily attendance tracking
- Multiple leave types & approval workflow
- Salary structure with components
- Automatic salary slip generation
- Tax declaration management
- HR document generation (Offer letter, Experience certificate)
- Training program management
- Exit process & clearance
- 
-## ✅ Electrical Inventory (Specialized Module)
+---
 
- Material master with part codes
- Brand & category management
- Cupboard/Rack location tracking
- Stock entry with person tracking
- Handover to person/project/machine
- Return with condition assessment
- Complete transaction audit log
- 
-## ✅ Reports & Analytics
+## 🏭 Manufacturing
+- Project management with timelines
+- Bill of Materials (BOM) with cost calculation
+- Work order management
+- Production entry with quality checks
+- Material issue & return tracking
+- Consumption variance analysis
+- Link projects to quotations & sales orders
 
- Real-time dashboard with KPIs
- PDF report generation
- Excel export functionality
- Custom report builder
- Date-wise filtering
- Module-wise reports
-📸 Screenshots
-Dashboard
-Dashboard
-Main dashboard with KPIs, charts, pending tasks, and quick actions
+---
 
-Login Page
-Login
-Secure login with 2FA support
+## 👥 HR Management
+- Complete employee master
+- Daily attendance tracking
+- Multiple leave types with approval workflow
+- Salary structure with components
+- Automatic payslip generation
+- Tax declaration management
+- HR document generation (Offer letter, Experience certificate)
+- Training program management
+- Exit process & clearance workflow
 
-Quotation Management
-Quotation
-Create and manage quotations with revision tracking
+---
 
-Sales Order
-Sales Order
-Sales order management with item details and status tracking
+## ⚡ Electrical Inventory (Specialized Module)
+- Material master with part codes
+- Brand & category management
+- Cupboard/Rack location tracking
+- Stock entry with person tracking
+- Handover to person/project/machine
+- Return with condition assessment
+- Complete transaction audit log
 
-Purchase Order
-Purchase Order
-Purchase order with supplier details and approval workflow
+---
 
-Inventory Management
-Inventory
-Stock management with barcode support and location tracking
+## 📊 Reports & Analytics
+- Real-time dashboards with KPIs
+- PDF report generation
+- Excel export functionality
+- Custom report builder
+- Date-wise filtering
+- Module-wise reports
 
-HR - Employee Management
-HR Employee
-Complete employee information management
-
-Salary Slip
-Salary Slip
-Auto-generated salary slip with all components
-
-Reports
-Reports
-Report generation with PDF and Excel export options
-
-
+---
 
 # 📸 Screenshots
 
-Dashboard
-Dashboard
-Main dashboard with KPIs, charts, pending tasks, and quick actions
+> Add images inside a `/screenshots` folder
 
-Login Page
-Login
-Secure login with 2FA support
+| Module | Preview |
+|--------|---------|
+| Dashboard | ![Dashboard](screenshots/dashboard.png) |
+| Login (2FA) | ![Login](screenshots/login.png) |
+| Quotation | ![Quotation](screenshots/quotation.png) |
+| Sales Order | ![Sales Order](screenshots/sales-order.png) |
+| Purchase Order | ![Purchase Order](screenshots/purchase-order.png) |
+| Inventory | ![Inventory](screenshots/inventory.png) |
+| HR Employee | ![HR](screenshots/hr.png) |
+| Salary Slip | ![Salary Slip](screenshots/salary.png) |
+| Reports | ![Reports](screenshots/reports.png) |
 
-Quotation Management
-Quotation
-Create and manage quotations with revision tracking
-
-Sales Order
-Sales Order
-Sales order management with item details and status tracking
-
-Purchase Order
-Purchase Order
-Purchase order with supplier details and approval workflow
-
-Inventory Management
-Inventory
-Stock management with barcode support and location tracking
-
-HR - Employee Management
-HR Employee
-Complete employee information management
-
-Salary Slip
-Salary Slip
-Auto-generated salary slip with all components
-
-Reports
-Reports
-Report generation with PDF and Excel export options
-
+---
 
 # 📝 Important Note
 
 ## ⚠️ Privacy Notice
+This repository contains a sanitized documentation/demo version of the ERP system.
 
-This repository contains a sanitized documentation version of the ERP system developed for production use. The actual source code is maintained in a private repository to protect:
+The actual production source code is maintained in a private repository to protect:
+- Client-specific business logic
+- Sensitive configurations
+- Proprietary algorithms
 
-Client-specific business logic
-Sensitive configuration details
-Proprietary algorithms
-This portfolio demonstrates the architecture, design patterns, technical capabilities, and development expertise involved in building this comprehensive ERP solution.
+This portfolio demonstrates the architecture, design patterns, and technical capabilities of the system.
 
-#  📄 License
+---
+
+# 📄 License
 This project documentation is available under the MIT License.
 
-# ⭐ If you find this project impressive, please consider giving it a star!
+---
 
-Built with ❤️ using Python, Flask & PostgreSQL
+# ⭐ Support
+If you find this project helpful, please consider giving it a star ⭐
 
-Made with Python
-PRs Welcome
+---
+
+### ❤️ Built with
+Python • Flask • PostgreSQL
