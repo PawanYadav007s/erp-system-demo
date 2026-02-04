@@ -85,3 +85,32 @@ flowchart TB
     MW --> Blueprints
     Blueprints --> Services
     Services --> PG & CACHE & FS
+
+```
+
+Request-Response Flow
+
+sequenceDiagram
+    autonumber
+    participant C as 🌐 Client Browser
+    participant M as 🛡️ Middleware
+    participant R as 📦 Route/Blueprint
+    participant S as ⚙️ Service Layer
+    participant D as 🗄️ PostgreSQL
+
+    C->>M: HTTP Request
+    M->>M: CSRF Token Validation
+    M->>M: Session Authentication
+    M->>M: Permission Check
+    
+    alt Unauthorized
+        M-->>C: 401/403 Error Page
+    else Authorized
+        M->>R: Forward Request
+        R->>S: Execute Business Logic
+        S->>D: Database Query/Update
+        D-->>S: Return Result
+        S-->>R: Processed Data
+        R-->>C: HTML/JSON Response
+    end
+
