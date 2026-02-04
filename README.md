@@ -246,10 +246,7 @@ flowchart TD
 | Quotation | ![Quotation](screenshots/quotation.png) |
 | Sales Order | ![Sales Order](screenshots/sales-order.png) |
 | Purchase Order | ![Purchase Order](screenshots/purchase-order.png) |
-| Inventory | ![Inventory](screenshots/inventory.png) |
-| HR Employee | ![HR](screenshots/hr.png) |
-| Salary Slip | ![Salary Slip](screenshots/salary.png) |
-| Reports | ![Reports](screenshots/reports.png) |
+
 
 ---
 
