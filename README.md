@@ -120,7 +120,7 @@ sequenceDiagram
 ## 🔐 Authentication System
 Login Flow with 2FA Support
 
-```
+```mermaid
 flowchart TD
     A["🔑 Login Page"] --> B{Valid<br/>Credentials?}
     B -->|No| C["❌ Increment<br/>Failed Count"]
@@ -149,7 +149,7 @@ flowchart TD
 
 ## Role-Based Access Control (RBAC)
 
-```
+```mermaid
 flowchart LR
     subgraph Users["👥 Users"]
         U1["Admin"]
@@ -196,7 +196,7 @@ flowchart LR
 ## 📦 Module Overview
 Module Interaction Diagram
 
-```
+```mermaid
 flowchart TB
     subgraph Sales["💰 SALES MODULE"]
         CUS[("👤 Customers")]
@@ -256,7 +256,7 @@ flowchart TB
  ```
 ## Detailed Module Breakdown
 
-```
+```mermaid
 mindmap
   root((🏢 ERP System))
     💰 Sales
@@ -309,7 +309,7 @@ mindmap
 ## 🔄 Business Process Flows
 Order to Cash (O2C) Flow
 
-```
+```mermaid
 flowchart LR
     A["👤 Customer<br/>Inquiry"] --> B["📝 Create<br/>Quotation"]
     B --> C{"Customer<br/>Approved?"}
@@ -328,7 +328,7 @@ flowchart LR
     style L fill:#c8e6c9
 ```
 ## Procure to Pay (P2P) Flow
-```
+```mermaid
 flowchart LR
     A["📋 Material<br/>Requirement"] --> B["📄 Create<br/>PR"]
     B --> C{"Level 1<br/>Approval"}
@@ -350,7 +350,7 @@ flowchart LR
 ```
 ## Manufacturing Workflow
 
-```
+```mermaid
 flowchart TD
     A["📋 Sales Order<br/>Received"] --> B["📁 Create/Link<br/>Project"]
     B --> C["📑 Create or<br/>Select BOM"]
