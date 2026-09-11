@@ -269,8 +269,14 @@ This project documentation is available under the MIT License.
 
 ---
 
-# ⭐ Support
-If you find this project helpful, please consider giving it a star ⭐
+# Contact and project enquiries
+
+To learn more about the ERP architecture, workflows, or similar enterprise application development:
+
+- GitHub: [PawanYadav007s](https://github.com/PawanYadav007s)
+- LinkedIn: [Pawan Yadav](https://www.linkedin.com/in/pawan-yadav-42a16020a)
+
+The production source code, credentials, client configuration, and operational data remain private.
 
 ---
 
